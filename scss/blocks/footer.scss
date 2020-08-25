@@ -1,0 +1,189 @@
+.footer {
+    background-color: rgba(78, 83, 66, 0.3);
+    padding: 70px 0 80px;
+    
+    .footer__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $light-grey;
+
+        .footer__left {
+            flex-basis: 33%;
+
+            span {
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 33px;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 19px;
+                line-height: 29px;
+                margin-top: 40px;
+            }
+        }
+
+        .footer__right {
+            display: flex;
+            flex-basis: 49%;
+
+            .footer__column {
+                margin-right: 100px;
+
+                .span-title {
+                    text-transform: uppercase;
+                    font-size: 21px;
+                    line-height: 33px;
+                    font-weight: 700;
+                    
+                }
+                .footer__menu {
+                    margin-top: 40px;
+
+                    a {
+                        text-decoration: none;
+                        color: $light-grey;
+                        font-size: 21px;
+                        line-height: 30px;
+                        font-weight: 700;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1130px) {
+    .footer {
+        padding: 60px 20px;
+
+        .footer__wrap {
+            .footer__right {
+                .footer__column:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .footer {
+        .footer__wrap {
+            .footer__left {
+                flex-basis: 48%;
+
+                p {
+                    margin-top: 30px;
+                }
+            }
+
+            .footer__right {
+                .footer__column {
+                    .footer__menu {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 940px) {
+    .footer {
+        .footer__wrap {
+            .footer__left {
+                flex-basis: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+
+                p {
+                    margin-top: 20px;
+                }
+            }
+
+            .footer__right {
+                flex-basis: 100%;
+                justify-content: space-around;
+
+                .footer__column {
+                    margin-right: 0;
+
+                    .footer__menu {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 530px) {
+    .footer {
+        .footer__wrap {
+            .footer__right {
+                flex-wrap: wrap;
+
+                .footer__column {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 100%;
+                    margin-bottom: 20px;
+
+                    .footer__menu {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 0;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        padding: 20px 10px;
+
+        .footer__wrap {
+            .footer__left {
+                span {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+
+            .footer__right {
+                .footer__column {
+                    span {
+                        font-size: 18px;
+                    }
+
+                    .footer__menu {
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

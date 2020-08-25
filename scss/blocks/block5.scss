@@ -1,0 +1,57 @@
+.block5 {
+    background-color: rgba(78, 83, 66, 0.3);
+    padding: 125px 0 100px;
+    text-align: center;
+
+    span {
+        font-family: 'GoodDog Cool';
+        color: $green;
+        font-size: 42px;
+        line-height: 33px;
+    }
+
+    p {
+        text-align: center;
+        width: 50%;
+        margin: 45px auto 55px;
+        font-size: 21px;
+        color: #dcdcdb;
+        line-height: 24px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .block5 {
+        padding: 50px 0;
+
+        p {
+            font-size: 19px;
+            width: 70%;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .block5 {
+        span {
+            font-size: 35px;
+        }
+        p {
+            font-size: 19px;
+            margin: 30px auto;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .block5 {
+        span {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}

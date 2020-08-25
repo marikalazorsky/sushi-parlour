@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("../img/bg.png") center center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: $white;
+}
+
+.container {
+  @include min-max(320px, 100%, 0);
+ 
+}
+
+.wrap {
+  @include min-max(320px, 1080px, 20px);
+}
+
+.general-padding {
+  padding: 0 20px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 57px;
+  text-transform: uppercase;
+  color: $green;
+}
+
+.p__h2 {
+  font-family: 'GoodDog Cool';
+  font-size: 29px;
+}
+
+.p__h3 {
+  font-family: 'GoodDog Cool';
+  font-size: 25px;
+}
+
+
+

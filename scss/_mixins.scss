@@ -1,0 +1,30 @@
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin btn($bg: $green) {
+  width: 390px;
+  background: rgba(93, 105, 66, 0.5);
+  text-transform: uppercase;
+  font-size: 49px;
+  font-weight: 700;
+  display: inline-block;
+  padding-right: 250px;
+  text-align: center;
+  color: $green;
+  padding: 30px 0;
+  border: none;
+  box-sizing: border-box;
+  transition-duration: 500ms;
+  transition-property: background-color;
+  @content;
+
+  &:hover {
+    background-color: darken($green, 10%);
+  }
+}
+
