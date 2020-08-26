@@ -11,7 +11,6 @@ var gulp = require("gulp"),
     uglify = require("gulp-uglify"),
     watch = require("gulp-watch"),
     plumber = require("gulp-plumber"),
-    imagemin = require("gulp-imagemin"),
     run = require("run-sequence"),
     rimraf = require("rimraf"),
     webserver = require("browser-sync");
@@ -88,6 +87,7 @@ gulp.task("css:build", function () {
             browsers: ["last 8 versions"],
             cascade: true
         }))
+        .pipe(webserver.reload({stream: true}))
         .pipe(cssbeautify())
         .pipe(gulp.dest(path.build.css))
         .pipe(cssnano({
@@ -123,12 +123,6 @@ gulp.task("fonts:build", function() {
 
 gulp.task("image:build", function () {
     gulp.src(path.src.img)
-        .pipe(imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            interlaced: true
-        }))
         .pipe(gulp.dest(path.build.img));
 });
 

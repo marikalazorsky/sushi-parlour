@@ -15,7 +15,6 @@ body {
 
 .container {
   @include min-max(320px, 100%, 0);
- 
 }
 
 .wrap {
@@ -35,14 +34,11 @@ h1 {
 }
 
 .p__h2 {
-  font-family: 'GoodDog Cool';
+  font-family: "GoodDog Cool";
   font-size: 29px;
 }
 
 .p__h3 {
-  font-family: 'GoodDog Cool';
+  font-family: "GoodDog Cool";
   font-size: 25px;
 }
-
-
-
