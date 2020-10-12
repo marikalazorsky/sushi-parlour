@@ -4,7 +4,7 @@
   display: flex;
 
   .block2__wrap {
-    background: url("../img/Group 2/header-bottom.png") no-repeat;
+    background: url("../../img/Group 2/header-bottom.png") no-repeat;
     background-size: auto 100%;
     background-position: right;
     box-sizing: border-box;
@@ -13,27 +13,23 @@
     display: flex;
     width: 100%;
 
-
-
     .block2__text {
       flex-direction: column;
       flex-basis: 38%;
-    
+
       p {
         color: $white;
         line-height: 30px;
         font-weight: 100;
-        
       }
-      
+
       .p__h2 {
         padding-bottom: 50px;
         color: $green;
-        }
+      }
     }
   }
 }
-
 
 @media (max-width: 1140px) {
   .block2 {

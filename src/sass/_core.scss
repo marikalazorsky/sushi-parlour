@@ -42,3 +42,10 @@ h1 {
   font-family: "GoodDog Cool";
   font-size: 25px;
 }
+
+@media (max-width: 768px) {
+  #header, #menu, #events, #contact {
+    padding-top: 50px;
+    margin-top: -50px;
+  }
+}

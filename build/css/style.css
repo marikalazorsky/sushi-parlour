@@ -116,8 +116,15 @@ h1 {
     font-size: 25px;
 }
 
+@media (max-width: 768px) {
+    #header, #menu, #events, #contact {
+        padding-top: 50px;
+        margin-top: -50px;
+    }
+}
+
 .header {
-    background: url("../img/Group 1/header-top.jpg") center center no-repeat;
+    background: url("../../img/Group 1/header-top.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-sizing: border-box;
@@ -414,7 +421,6 @@ h1 {
     .header .header__top .header__menu {
     /*Burger menu*/
     /*Burger menu action*/
-    /*Burger menu*/
     }
 
     .header .header__top .header__menu nav {
@@ -464,25 +470,43 @@ h1 {
         padding-right: 0;
     }
 
+    .header .header__top .header__menu .burger-wrap {
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 10px;
+        top: 0;
+        left: 0;
+        background-color: #4e5342;
+        z-index: 999;
+    }
+
     .header .header__top .header__menu .burger {
-        position: absolute;
+        position: relative;
         right: 5px;
-        top: 10px;
+        top: 3px;
         width: 50px;
         height: 50px;
         cursor: pointer;
         z-index: 1000;
     }
 
-    .header .header__top .header__menu .burger span, .header .header__top .header__menu .burger span:before, .header .header__top .header__menu .burger span:after {
+    .header .header__top .header__menu .burger span,
+    .header .header__top .header__menu .burger span:before,
+    .header .header__top .header__menu .burger span:after {
         width: 100%;
         position: absolute;
         height: 5px;
         background: #fff;
         display: block;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
         border-radius: 5px;
     }
 
@@ -658,7 +682,7 @@ h1 {
 }
 
 .block2 .block2__wrap {
-    background: url("../img/Group 2/header-bottom.png") no-repeat;
+    background: url("../../img/Group 2/header-bottom.png") no-repeat;
     -webkit-background-size: auto 100%;
     background-size: auto 100%;
     background-position: right;
@@ -852,7 +876,7 @@ h1 {
     font-size: 46px;
     line-height: 61px;
     color: #afc67b;
-    font-family: 'GoodDog Cool';
+    font-family: "GoodDog Cool";
 }
 
 .block4 .block4__wrap .block4__top p {
@@ -910,7 +934,7 @@ h1 {
 }
 
 .block4 .block4__wrap .block4__bottom .bottom__row .row .row__text span {
-    font-family: 'GoodDog Cool';
+    font-family: "GoodDog Cool";
     font-size: 25px;
 }
 
@@ -1091,7 +1115,7 @@ h1 {
 }
 
 .block6 {
-    background: url("../img/Group 6/menu.jpg") center center no-repeat;
+    background: url("../../img/Group 6/menu.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-sizing: border-box;
@@ -1116,7 +1140,7 @@ h1 {
 }
 
 .block6 .block6__wrap .block6__top span {
-    font-family: 'GoodDog Cool';
+    font-family: "GoodDog Cool";
     font-size: 70px;
     color: #eaeaea;
 }
@@ -1165,7 +1189,7 @@ h1 {
 }
 
 .block6 .block6__wrap .block6__bottom .bottom__item .item__text p span {
-    font-family: 'GoodDog Cool';
+    font-family: "GoodDog Cool";
     font-size: 21px;
 }
 
@@ -1456,11 +1480,11 @@ h1 {
 
 @media (max-width: 375px) {
     .block7 form .date {
-        margin-left: 40px;
+        margin-left: 0;
     }
 
     .block7 form #date {
-        width: 80%;
+        width: 90%;
     }
 }
 
