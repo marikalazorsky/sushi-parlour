@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
  **/
 body {
     font-family: "Montserrat", sans-serif;
-    background: url("/img/bg.png") center center no-repeat;
+    background: url("../img/bg.png") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-sizing: border-box;
@@ -117,14 +117,17 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    #header, #menu, #events, #contact {
+    #header,
+  #menu,
+  #events,
+  #contact {
         padding-top: 50px;
         margin-top: -50px;
     }
 }
 
 .header {
-    background: url("../../img/Group 1/header-top.jpg") center center no-repeat;
+    background: url("../img/Group 1/header-top.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-sizing: border-box;
@@ -682,7 +685,7 @@ h1 {
 }
 
 .block2 .block2__wrap {
-    background: url("../../img/Group 2/header-bottom.png") no-repeat;
+    background: url("../img/Group 2/header-bottom.png") no-repeat;
     -webkit-background-size: auto 100%;
     background-size: auto 100%;
     background-position: right;
@@ -1115,7 +1118,7 @@ h1 {
 }
 
 .block6 {
-    background: url("../../img/Group 6/menu.jpg") center center no-repeat;
+    background: url("../img/Group 6/menu.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-sizing: border-box;
